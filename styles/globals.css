@@ -1,3 +1,12 @@
+:root {
+  --main-black: hsl(258deg, 6%, 11%);
+  --off-gray: hsl(258deg, 6%, 30%);
+  --light-lavender: hsl(270deg, 76%, 80%);
+  --background: hsl(320, 76%, 97%);
+  --app-lavender: hsl(270deg, 76%, 64%);
+  --dark-lavender: hsl(270deg, 85%, 55%);
+}
+
 html,
 body {
   padding: 0;
@@ -6,6 +15,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  color: var(--main-black);
 }
 
 * {
@@ -13,12 +23,15 @@ body {
 }
 
 a {
-  color: #0070f3;
+  color: var(--dark-lavender);
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--app-lavender);
+  outline: 2px dashed var(--app-lavender);
 }
 
 img {

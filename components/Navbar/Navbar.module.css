@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.linkContainer a {
+  margin: 0 5px;
+  padding: 6px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contactGroup {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
