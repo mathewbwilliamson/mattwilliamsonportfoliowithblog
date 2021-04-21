@@ -30,6 +30,22 @@
   line-height: 1.5;
 }
 
+.highlight {
+  display: inline-block;
+  width: fit-content;
+  background: var(--light-lavender);
+  position: relative;
+  transform: rotate(-1.2deg);
+  font-weight: 500;
+  padding: 0 5px;
+}
+
+.highlight span {
+  display: inline-block;
+  position: relative;
+  transform: rotate(1.2deg);
+}
+
 .borderCircle {
   border-radius: 9999px;
 }

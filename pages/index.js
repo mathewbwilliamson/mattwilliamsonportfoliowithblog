@@ -21,11 +21,10 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Woo this is my bloggggg</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+      <p>I'm currently <span className={utilStyles.highlight}><span>exploring new opportunities</span></span> and side projects.</p>
+      <p>I've been a front-end developer, a mobile front-end developer, and a backend developer.</p>
+      <p>In the past, I spent my days building Progressive Web Apps for large companies like Pandora Jewellery and Tommy Bahama, building banking applications for Bank OZK, and quite a few side projects.</p>
+      <p>Throughout all, learning has been my passion and I'm most passionate about <span className={utilStyles.highlight}><span>Typescript</span></span>, <span className={utilStyles.highlight}><span>React</span></span>, and <span className={utilStyles.highlight}><span>Node</span></span>!</p>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
