@@ -9,47 +9,51 @@ export const siteTitle = 'Matt Williamson, Web Engineer'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <>
       <Navbar />
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Matt Williamson's Portfolio and Blog"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <h2 className={utilStyles.headingLg}>Hello, I'm Matt 👋
-and I love web development</h2>
-          </>
-        ) : (
-          <>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
+      <div className={styles.container}>
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+          <meta
+            name="description"
+            content="Matt Williamson's Portfolio and Blog"
+          />
+          <meta
+            property="og:image"
+            content={`https://og-image.vercel.app/${encodeURI(
+              siteTitle
+            )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          />
+          <meta name="og:title" content={siteTitle} />
+          <meta name="twitter:card" content="summary_large_image" />
+        </Head>
+        <header className={styles.header}>
+          {home ? (
+            <>
+              <h2 className={utilStyles.basicFlexColumn}>
+                <span>Hello, I'm Matt 👋</span>
+                <span>and I love web development</span>
+              </h2>
+            </>
+          ) : (
+            <>
+              <h2 className={utilStyles.headingLg}>
+                <Link href="/">
+                  <a className={utilStyles.colorInherit}>Back Home</a>
+                </Link>
+              </h2>
+            </>
+          )}
+        </header>
+        <main>{children}</main>
+        {!home && (
+          <div className={styles.backToHome}>
+            <Link href="/">
+              <a>← Back to home</a>
+            </Link>
+          </div>
         )}
-      </header>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
-    </div>
+      </div>
+    </>
   )
 }

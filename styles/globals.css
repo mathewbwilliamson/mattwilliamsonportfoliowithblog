@@ -22,6 +22,11 @@ body {
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
 a {
   color: var(--dark-lavender);
   text-decoration: none;
