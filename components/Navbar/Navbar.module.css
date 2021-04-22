@@ -29,3 +29,19 @@
   align-items: center;
   flex-direction: row;
 }
+
+.contactGroup a {
+  padding: 5px;
+}
+
+.pageContactGroup {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.pageContactGroup a {
+  padding: 5px;
+  margin-right: 16px;
+}

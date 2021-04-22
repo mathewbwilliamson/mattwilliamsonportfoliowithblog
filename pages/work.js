@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/Layout'
 import utilStyles from '../styles/utils.module.css'
-import styles from '../styles/work.module.css'
 
 export default function Work() {
     return (
@@ -9,7 +8,7 @@ export default function Work() {
         <Head>
           <title>{siteTitle}</title>
         </Head>
-            <div className='work-page-container'>
+            <div>
             <h1>Work History 👨‍💻</h1>
             
             <h3>Software Engineer @ Bank OZK <span className={utilStyles.smaller}>(Sep 2019 to Current)</span></h3>
