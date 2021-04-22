@@ -71,3 +71,7 @@
 .lightText {
   color: #666;
 }
+
+.smaller {
+  font-size: 0.8rem;
+}

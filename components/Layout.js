@@ -27,19 +27,11 @@ export default function Layout({ children, home }) {
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
         <header className={styles.header}>
-          {home ? (
+          {home && (
             <>
               <h2 className={utilStyles.basicFlexColumn}>
                 <span>Hello, I'm Matt 👋</span>
                 <span>and I love web development</span>
-              </h2>
-            </>
-          ) : (
-            <>
-              <h2 className={utilStyles.headingLg}>
-                <Link href="/">
-                  <a className={utilStyles.colorInherit}>Back Home</a>
-                </Link>
               </h2>
             </>
           )}
