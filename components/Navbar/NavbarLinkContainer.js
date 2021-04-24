@@ -6,7 +6,7 @@ export default function NavbarLinkContainer() {
     return (
         <div className={styles.linkContainer}>
             <Link href='/work'>Work</Link>
-            <Link href='/blog'>Writing</Link>
+            <Link href='/writings'>Writing</Link>
             <Link href='/contact'>Contact</Link>
             <ContactGroup />
         </div>
